@@ -1,0 +1,144 @@
+
+/* Fuentes Globales */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+}
+/* Fuentes Globales */
+
+/* ESTRUCTURA HEADER */
+#headerPrincipal{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    text-align: center;
+    align-items: center;
+}
+/* ESTRUCTURA HEADER */
+
+
+/* EFECTO OPACIDAD LOGO HEADER */
+#logo_vector{
+    flex-grow: 0;
+    padding: 5px 25px;
+    opacity: 0.6;
+    transition: opacity 0.6s ease;
+}
+#logo_vector:hover{
+    opacity: 1;
+}
+/* EFECTO OPACIDAD LOGO HEADER */
+
+
+/* FORMATO TITULO HEADER */
+header h1 {
+    font-size: 3rem;
+    color: aliceblue;
+    flex-grow: 1;
+}
+/* FORMATO TITULO HEADER */
+
+
+/* CONTENEDOR SLIDER, quita barra desplazamiento */
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;    
+}
+
+/* FORMATO CONTENIDO SLIDER */
+.contenido-slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* FONDO Y FORMATO SLIDER 2 */
+.contenido-slider:nth-child(2){
+    background: #332863;
+    color:#fff;
+}
+
+/* FONDO Y FORMATO SLIDER 3*/
+.contenido-slider:nth-child(3){
+    background: #611a68;
+    color:#fff;
+}
+
+/* TAMAÑO IMAGENES SLIDER */
+.contenido-slider > img{
+    width: 50%;
+}
+
+/* ESPACIO UTILIZADO POR TEXTO */
+.contenido-slider > div{
+    width: 40%;
+}
+
+
+/* FUENTE TEXTO SLIDER */
+.contenido-slider p{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+/* FORMATO BOTONES SLIDER */
+.contenido-slider a {
+    color:#fff;
+    background: #332863;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* CORRECION COLORES BOTON SLIDER 2  */
+.contenido-slider:nth-child(2) a{
+    background: #fff;
+    color:#332863;
+}
+
+@media screen and (max-width:900px){
+    .contenido-slider > img{
+        width: 250px;
+    }
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .contenido-slider{
+       flex-direction: column-reverse;
+    }
+
+    .contenido-slider > div{
+        width: 80%;
+    }
+
+}
